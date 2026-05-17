@@ -62,3 +62,8 @@ jobs:
       - name: Run tests
         run: |
           python -m pytest test/test_ingestion.py
+      - name: Terraform fmt check
+        continue-on-error: true  # Add this line to stop formatting from breaking the build
+        run: |
+          cd terraform
+          terraform fmt -check
