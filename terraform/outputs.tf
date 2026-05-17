@@ -1,7 +1,7 @@
 # ── Phase 1 outputs ────────────────────────────────────────────────────────
 output "api_gateway_endpoint" {
   description = "Public endpoint for telemetry ingestion"
-  value = module.api_gateway.api_endpoint
+  value       = module.api_gateway.api_endpoint
 }
 
 

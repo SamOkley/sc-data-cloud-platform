@@ -17,7 +17,7 @@ variable "environment" {
 variable "aws_region" {
   description = "AWS region for all resources"
   type        = string
-  default     = "ap-southeast-2"   # Sydney
+  default     = "ap-southeast-2" # Sydney
 }
 
 # ── Phase 2: Glue ─────────────────────────────────────────────────────────────
@@ -36,7 +36,7 @@ variable "glue_number_of_workers" {
 variable "glue_etl_schedule_cron" {
   description = "Cron expression for the ETL trigger (Glue syntax)"
   type        = string
-  default     = "cron(0 * * * ? *)"  # every hour on the hour
+  default     = "cron(0 * * * ? *)" # every hour on the hour
 }
 
 # ── Phase 2: Notifications ────────────────────────────────────────────────────
