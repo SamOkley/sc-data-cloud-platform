@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(terraform validate *)",
+      "Bash(python -m py_compile lambdas/processor_lambda/app.py lambdas/ingestion_lambda/app.py scripts/inject_sample_data.py)"
+    ]
+  }
+}
